@@ -8,13 +8,13 @@ int main(int ac, char **av)
         {
             for (int j = 0; av[i][j] != '\0'; j++)
             {
-                std::cout << static_cast<char>(std::toupper(av[i][j]));
+                std::cout << char(std::toupper(av[i][j]));
             }
             if (i < ac - 1)
                 std::cout << " ";
         }
+        std::cout << std::endl;
     }
     else
-        std::cout <<"* LOUD AND UNBEARABLE FEEDBACK NOISE *"<< std::endl;
-    return (0);
+        std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
 }
